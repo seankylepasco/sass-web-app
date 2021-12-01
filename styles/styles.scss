@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates&display=swap');
+
+$primary: #142F43;
+$secondary: #FFAB4C;
+$tertiary: #FF5F7E;
+$quaternary:#B000B9;
+$light: #f1f1f1;
+$font: 'Indie FLower';
+
+* {
+    font-family: $font;
+    font-size: 20px;
+}
+
+html, body {
+    display: flex;
+    background-color: $primary;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+.container { 
+    display: flex;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    color: $light;
+    display: flex;
+    button {
+        padding: 10px;
+        border: none;
+        background-color: $quaternary;
+        color: $light;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        background-color: $secondary;
+        margin: 10px;
+
+        button {
+            padding: 10px;
+            border: none;
+        }
+        #edit {
+            background-color: $tertiary;
+            color: $light;
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content; 
+}
+
+.close {
+    width: fit-content
+}

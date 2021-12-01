@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title> Sass Me </title>
+        <link rel="shortcut icon" type="image/jpg" href="https://cdn.iconscout.com/icon/free/png-256/sass-226054.png"/>
+    </head>
+    <body class="col">
+
+        <header class="container">
+            <h1>Sass is awesome! </h1>
+            <button onclick='openModal("addmodal")'>lets add something</button>
+        </header>
+
+        <div id='dataholder' class="col container center">
+            
+        </div>
+
+        <div id='addmodal' class="modal">
+            <div class="modal-content col">
+                <button style="width: fit-content; margin-bottom: 10px" onclick='closeModal("addmodal")'>x</button>
+                <div class="row">
+                    <input id='name' type="text" placeholder="add a name">
+                    <button onclick="insertData()">save</button>
+                </div>
+            </div>
+        </div>
+
+        <div id='editmodal' class="modal">
+            <div class="modal-content col">
+                <button style="width: fit-content; margin-bottom: 10px" onclick='closeModal("editmodal")'>x</button>
+                <div class="row">
+                    <input id='id' type="hidden">
+                    <input id='editname' type="text">
+                    <button onclick="updateData()">save</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src='index.js'></script>
+    <script src='modal.js'></script>
+</html>
